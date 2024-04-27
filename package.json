@@ -1,24 +1,31 @@
 {
-  "name": "microdev",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.3"
-  },
-  "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.3"
-  }
+    "name": "microdev",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint",
+        "build-schema": "dotenv -- tsx db/buildSchema.ts"
+    },
+    "dependencies": {
+        "next": "14.2.3",
+        "pg": "^8.11.5",
+        "react": "^18",
+        "react-dom": "^18",
+        "zod": "^3.23.4"
+    },
+    "devDependencies": {
+        "@types/node": "^20",
+        "@types/pg": "^8.11.5",
+        "@types/react": "^18",
+        "@types/react-dom": "^18",
+        "dotenv-cli": "^7.4.1",
+        "eslint": "^8",
+        "eslint-config-next": "14.2.3",
+        "sass": "^1.75.0",
+        "tsx": "^4.7.3",
+        "typescript": "^5"
+    }
 }
